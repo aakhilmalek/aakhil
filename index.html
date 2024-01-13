@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Primary Meta Tags -->
+    <meta name="description" content="Elevate your web development skills with our comprehensive resources. Learn the latest technologies, access tutorials, and stay updated on industry best practices.">
+    <meta name="keywords" content="web development, coding tutorials, programming languages, front-end development, back-end development, web design, responsive design, JavaScript, HTML, CSS, best practices, web development tools">
+    <meta name="author" content="Aakhil Malek">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.aakhilmalek.com">
+    <meta property="og:title" content="Your Website Title">
+    <meta property="og:description" content="Your website description here">
+    <meta property="og:image" content="https://www.aakhilmalek.com/images/share-image.jpg"> <!-- 1200x630 pixels recommended -->
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.aakhilmalek.com">
+    <meta property="twitter:title" content="Your Website Title">
+    <meta property="twitter:description" content="Your website description here">
+    <meta property="twitter:image" content="https://www.aakhilmalek.com/images/share-image.jpg"> <!-- 1200x630 pixels recommended -->
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Other Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+    <title>Aakhil Malek - Portfolio</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="loader-wrapper" >
+        <div class="loader"></div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="row p-0">
+                <div class="col-lg-3 col-3">
+                <div class="logo">
+                    <!-- <img src="logo.png" alt="Logo"> -->
+                    <h2 class="mb-0 ">Aakhil Malek</h2>
+                </div>
+                </div>
+                <div class="col-lg-9 col-9">
+                    <nav class="navbar navbar-expand-lg ">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                          <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active"  aria-current="page" href="#home">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#about">About me</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                              </li>
+                            </ul>
+                          </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main >
+        <div class="" data-scroll-container>
+        <section class="section banner-section " data-scroll-section id="home">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="heading" data-scroll>
+                            <h1 class="scroll-text" data-splitting >Web Development</h1>
+                            <p class="subtext">
+                                Elevate Your Online Presence with Expert Web Development Solutions
+                            </p>
+                            <a href="#" class=" ripple-btn" onclick="createRipple(event)">Let's Work together </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section about-me " data-scroll-section id="about">
+            <div class="container">
+                <div class="row flex-row-reverse">
+                    <div class="col-lg-4">
+                        <img class="img-fluid" src="assets/img/myprofile.jpg" alt="Profile Image" class="profile-image">
+                    </div>
+                    <div class="col-lg-8">
+                        <h2>About <mark>Me</mark></h2>
+                        <p class="subtext">
+                            Hi there! I'm <b>Aakhil Malek</b>, a passionate Team Lead / Web Developer based in Ahemdabad, India. I love to create immersive and user-friendly websites and believe in the power of innovation and collaboration. In my free time, you can find me exploring new technologies, experimenting with code, and enjoying outdoor adventures.
+                        </p>
+                        <div class="social-icons">
+                        <a href="https://twitter.com/example" target="_blank">Twitter</a>
+                        <a href="https://linkedin.com/in/example" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/example" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section education " data-scroll-section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h2>Education and <mark>Experience</mark></h2>
+                        <p class="subtext">Educated in Computer science and armed with hands-on experience, I bring a seamless blend of knowledge and practical expertise to every project</p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h3>BCA</h3>
+                                    <p class="timeline-date">2010 - 2014</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h3>Web Developer Intern</h3>
+                                    <p class="timeline-date">2015 - 2016</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h3>Web designer </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h3>Team lead </h3>
+                                    <p class="timeline-date">2015 - 2016</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section skills " data-scroll-section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>My Skills</h2>
+                        <p class="subtext">"Proficient in HTML, CSS, JavaScript; Experienced in React and Node.js; Strong problem-solving and communication abilities. Section: Explore my diverse skill set, from front-end design to back-end development, ensuring a holistic approach to creating dynamic and responsive web applications."</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <span class="specialization-name">Frontend Development</span>
+                            <p class="specialization-description">Create the user interface and user experience of a website or web application.</p>
+                            <ul>
+                                <li class="skill-item">
+                                  <span class="skill-name">HTML</span>
+                                  <span class="skill-level">Expert</span>
+                                </li>
+                                <li class="skill-item">
+                                  <span class="skill-name">CSS</span>
+                                  <span class="skill-level">Advanced</span>
+                                </li>
+                                <li class="skill-item">
+                                  <span class="skill-name">JavaScript</span>
+                                  <span class="skill-level">Intermediate</span>
+                                </li>
+                              </ul>
+                        </div>
+                        <div class="card mb-2">
+                            <span class="specialization-name">Backend Development</span>
+                                <p class="specialization-description">Focus on server-side logic and databases to support the functionality of a website or web application.</p>
+                            <ul>
+                                <li class="skill-item">
+                                  <span class="skill-name w-100">Python (Rest Fremework)</span>
+                                  <span class="skill-level">Intermediate</span>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section work" data-scroll-section>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <h2>My Blog</h2>
+                        <p class="subtext">Subtext or additional information goes here.</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="card-list">
+                            <article class="ct-box ">
+                                <div class="ct-latest-thumb-archive">
+                                    <a href="">
+                                        <img src="https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2023/10/Astro.jpg?x27001" class="" alt="">
+                                    </a>
+                                </div>
+                                <div class="ct-latest-description">
+                                            <div class="ct-post-tags">
+                                                <a href="">astro</a>
+                                                <a href="">astro</a>
+                                                <a href="">astro</a>
+                                                <h2>
+                                                <a href=""> Animating Multi-Page Navigations with Browser View Transitions and Astro </a>
+                                    </h2>
+                                    <p class="ct-subline">
+                                        <time class="ct-subline__date">Oct 3, 2023</time> by 
+                                            <a href="" title="Posts by Igor Penaque" rel="author">Igor Penaque</a>
+                                        </p>
+                                        <p class="ct-feat-excerpt">
+                                            A beginner-friendly guide that walks you through the use of the Browser View Transitions API with Astro for a smoother navigation experience.</p>
+                                         </p>
+                                    <a class="ct-more" href="">+ more</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section testi" data-scroll-section >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Trusted by Clients</h2>
+                        <p class="subtext">Subtext or additional information goes here.</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="testimonial-container">
+                            <div class="testimonial">
+                                <div>
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio nec urna euismod sagittis. Nulla facilisi."</p>
+                                    <h3>Lorem</h3>
+                                </div>
+                                <div> <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Client 1"></div>
+                            </div>
+                            <div class="testimonial">
+                                <div>
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio nec urna euismod sagittis. Nulla facilisi."</p>
+                                    <h3>Lorem</h3>
+                                </div>
+                                <div> <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Client 1"></div>
+                            </div>
+                            <!-- Add more testimonials as needed -->
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section testi" data-scroll-section >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2>My Pricing</h2>
+                        <p class="subtext">
+                            Offering tailored solutions to suit your project needs. Let's discuss your vision and goals, and together, we'll determine a competitive and fair pricing structure for a successful collaboration.
+                        </p>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-md-6 ">
+                                <div class="pricing-table plan">
+                                    <div class="pricing-table-header">
+                                        <div class="top d-flex justify-content-between align-items-start">
+                                            <h4>basic</h4>
+                                            <p class="text-right">Have design ready to build?<br>or small budget</p>
+                                        </div>
+                                        <h1 class="price">$20 <span>/ hours</span></h1>
+                                    </div>
+                                    <ul class="feature-lists">
+                                        <li>Need your wireframe</li>
+                                        <li>Design with Figma, XD</li>
+                                        <li>Implement with React, Angular, VueJs, Laravel/PHP</li>
+                                        <li>Remote/Online</li>
+                                        <li>Work in business days, no weekend.</li>
+                                        <li>Support 6 months</li>
+                                    </ul>
+                                    <a href="#contact" class="btn-plan">pick this package</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pricing-table plan">
+                                    <div class="pricing-table-header">
+                                        <div class="top d-flex justify-content-between align-items-start">
+                                            <h4>premium</h4>
+                                            <p class="text-right">Not have any design?<br> Leave its for me</p>
+                                        </div>
+                                        <h1 class="price">$45 <span>/ hours</span></h1>
+                                    </div>
+                                    <ul class="feature-lists">
+                                        <li>Don't need wireframe or anything</li>
+                                        <li>Design with Figma, Framer from scratch</li>
+                                        <li>Implement with React, Angular, VueJs, Laravel/PHP</li>
+                                        <li>Remote/Online</li>
+                                        <li>Work with both weekend</li>
+                                        <li>Support 12 months</li>
+                                        <li>Your project alway be priority</li>
+                                        <li>Customer care gifts</li>
+                                    </ul>
+                                    <a href="#contact" class="btn-plan">pick this package</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section contact" data-scroll-section>
+            <div class="container">
+                <div class="row s mb-4">
+                        <div class="col-lg-8">
+                            <h2>Let's Work 
+                                <mark>Together!</mark></h2>
+                            <p class="subtext mw-100">"Let's Work Together! Whether you have a project in mind, need technical expertise, or simply want to discuss ideas, I'm ready to collaborate and turn your vision into reality. Reach out, and let's create something amazing!"</p>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" >
+                            <label for="floatingInput">Email address</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Mobile nummber" id="floatingTextarea" ></textarea>
+                            <label for="floatingTextarea">Mobile nummber</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" > textarea with some text inside</textarea>
+                            <label for="floatingTextarea2">Comments</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label  select example" >
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Works with selects</label>
+                          </div>
+                          <a href="" class="btn btn-primary  ripple-btn">Submit</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="partner-content">
+                            <h3>Become a Partner</h3>
+                            <p>We are excited to explore partnership opportunities with organizations that share our vision and values. By becoming a partner, you can join us in empowering web developers and contributing to our vibrant community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer data-scroll-section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer-logo">
+                            <!-- <img src="your-logo.png" alt="Your Logo"> -->
+                            <a href="#home">Aakhil M.</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-links">
+                            <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About Us</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-contact">
+                            <p>Email: info@example.com</p>
+                            <p>Phone: +1 (123) 456-7890</p>
+                          </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="footer-bottom">
+                            <p>&copy; 2024 Aakhil Malek All rights reserved.</p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </main>
+    <!-- <a class="btn pt-btn pt-btn_cta pt-btn_bdemo -md -primary" href="#" target="_blank" rel="noopener"><span class="pt-btn_cta-fill"></span></span><span class="pt-btn_cta-title"><em><span data-text="Book a demo">Book a demo</span></em></span></a> -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js" integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+<script>
+setTimeout(function() {
+    document.querySelector('.loader-wrapper').style.display = 'none';
+    document.querySelector('.content').style.display = 'block';
+}, 500);
+    document.addEventListener('DOMContentLoaded', function () {
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+        const split = new SplitType('.scroll-text', { split: 'chars' });
+        // GSAP animation
+        gsap.from(split.chars, {
+            y: '100%',
+            stagger: 0.05,
+            duration:0.70,
+            scrollTrigger: {
+                trigger: '.scroll-text',
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: true,
+                markers: true,
+            },
+        })     
+    });
+    gsap.registerPlugin(ScrollTrigger);
+    let sections = gsap.utils.toArray(".panel");
+    gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".container",
+        pin: true,
+        scrub: 1,
+        snap: 1 / (sections.length - 1),
+        end: () => "+=" + document.querySelector(".container").offsetWidth
+    }
+    });
+</script>
+</body>
+</html>
