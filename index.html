@@ -31,6 +31,8 @@
     <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 </head>
 <body>
     <div class="loader-wrapper" >
@@ -39,13 +41,13 @@
     <header>
         <div class="container">
             <div class="row p-0">
-                <div class="col-lg-3 col-3">
+                <div class="col-lg-3 col-4">
                 <div class="logo">
                     <!-- <img src="logo.png" alt="Logo"> -->
                     <p class="mb-0 ">Aakhil Malek</p>
                 </div>
                 </div>
-                <div class="col-lg-9 col-9">
+                <div class="col-lg-9 col-8">
                     <nav class="navbar navbar-expand-lg ">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -123,6 +125,7 @@
                         <a href="https://twitter.com/example" target="_blank">Twitter</a>
                         <a href="https://linkedin.com/in/example" target="_blank">LinkedIn</a>
                         <a href="https://github.com/example" target="_blank">GitHub</a>
+                        <a href="https://github.com/example" target="_blank">Youtube</a>
                         </div>
                     </div>
                 </div>
@@ -253,8 +256,22 @@
                         <h2>Trusted by Clients</h2>
                         <p class="subtext">Experience the Confidence of Our Satisfied Clients                        </p>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="testimonial-container">
+
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="testimonial-container">
+                                <div class="testimonial">
+                                    <div>
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio nec urna euismod sagittis. Nulla facilisi."</p>
+                                        <h3>Lorem</h3>
+                                    </div>
+                                    <div> <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Client 1"></div>
+                                </div>
+                                <!-- Add more testimonials as needed -->
+                              </div>
+                          </div>
+                          <div class="swiper-slide"><div class="testimonial-container">
                             <div class="testimonial">
                                 <div>
                                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio nec urna euismod sagittis. Nulla facilisi."</p>
@@ -263,10 +280,8 @@
                                 <div> <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Client 1"></div>
                             </div>
                             <!-- Add more testimonials as needed -->
-                          </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="testimonial-container">
+                          </div></div>
+                          <div class="swiper-slide"><div class="testimonial-container">
                             <div class="testimonial">
                                 <div>
                                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio nec urna euismod sagittis. Nulla facilisi."</p>
@@ -275,8 +290,17 @@
                                 <div> <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Client 1"></div>
                             </div>
                             <!-- Add more testimonials as needed -->
-                          </div>
+                          </div></div>
+                          <!-- Add more slides as needed -->
+                        </div>
+                        <!-- Add Pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
+
+                  
                 </div>
             </div>
         </section>
@@ -425,6 +449,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <script>
 setTimeout(function() {
     document.querySelector('.loader-wrapper').style.display = 'none';
@@ -464,5 +490,28 @@ setTimeout(function() {
     }
     });
 </script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {  
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,},
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 50, },
+  },
+    });
+  </script>
 </body>
 </html>

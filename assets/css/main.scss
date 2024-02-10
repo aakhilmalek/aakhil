@@ -490,6 +490,8 @@ p {
 
   h2 {
     font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 30px;
   }
 
   h3 {
@@ -500,6 +502,10 @@ p {
     font-size: 14px;
     line-height: 130%;
     margin-bottom: 12px;
+  }
+  body section .subtext  {
+    font-size: 16px !important;
+    line-height: 160% !important;
   }
 }
 
@@ -538,7 +544,20 @@ header {
 					color: $h_color_1;
 					font-weight: 600;
 					font-size: 16px;
+          position: relative;
+          
 				}
+        a:hover::after {
+          content: '';
+          display: block;
+          width: 60%;
+          height: 2px;
+          background-color: #000; /* Change the color as per your preference */
+          position: absolute;
+          bottom: 0;
+          left: 20%;
+          transition: width 0.3s ease;
+        }
 			}
 		}
 	}
@@ -666,7 +685,7 @@ footer {
 
 
 $btn-color_1: #fff;
-$btn-background-color_1: #333333;
+$btn-background-color_1: #000;
 $btn-background-color_2: #8330c2;
 
 .btn-primary {
@@ -699,7 +718,7 @@ $btn-background-color_2: #8330c2;
 
 // ============================
 
-$color_1: #333333;
+$color_1: #000;
 $color_2: #fff;
 $background-color_1: #fff;
 $background-color_2: rgba(0, 0, 0, 0.05);
@@ -730,7 +749,7 @@ $background-color_2: rgba(0, 0, 0, 0.05);
 		bottom: 0;
 		z-index: 1;
 		background: linear-gradient(45deg, $color_2, $color_2);
-		opacity: 0.7;
+		opacity: 0.6;
 	}
 	&::after {
 		content: "";
@@ -741,7 +760,7 @@ $background-color_2: rgba(0, 0, 0, 0.05);
 		bottom: 0;
 		z-index: 1;
 		background: linear-gradient(135deg,  $color_2, $color_2);
-		opacity: 0.7;
+		opacity: 0.6;
 	}
 	h1 {
 		font-weight: 600;
@@ -793,9 +812,29 @@ $background-color_2: rgba(0, 0, 0, 0.05);
       min-height: 80vh;
 
       h1 {
-            font-size: 8.6vw;
-            line-height: 6.5vw;
+            font-size: 10.6vw;
+            line-height: 10.5vw;
         }
+
+        p.subtext{
+          font-size: 16px !important;
+          line-height: 26px !important; 
+        }
+    }
+
+    .banner-section .tags span {
+      padding: 4px 8px;
+      font-size: 10px;
+      line-height: 10px;
+      margin-bottom: 6px;
+      margin: 0 3px 6px 3px;
+    }
+
+    .btn {
+      font-size: 14px !important;
+      line-height: 24px !important; 
+      height: 40px !important;
+      padding: 7px 20px !important;
     }
 }  
 
@@ -1159,6 +1198,7 @@ $w-background-color_1: #fef2ff;
     .ct-box  {
       flex-direction: column;
     }
+    
   }  
   
 }
@@ -1410,7 +1450,7 @@ $ab-background-color_1: #fef2ff;
 		line-height: 140%;
 		color: $ab-color_1;
 		max-width: 700px;
-        margin-bottom: 30px;
+    margin-bottom: 30px;
 	}
 }
 
@@ -1422,7 +1462,7 @@ $ab-background-color_1: #fef2ff;
         img {
             text-align: center;
             max-width: 60%;
-            margin: 50px auto !important;
+            margin: 30px auto 20px auto !important;
         }
         
         .flex-row-reverse {
@@ -1436,16 +1476,32 @@ $ab-background-color_1: #fef2ff;
     }
 
     .timeline h3 {
-        font-size: 24px;
+        font-size: 22px;
+        line-height: 24px;
         margin-bottom: 10px;
     }
     
+    .timeline .timeline-date {
+      font-size: 12px;
+      line-height: 10px;
+    }
+    .timeline p  {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    
+    .skills .skill-item {
+      margin-bottom: 8px;
+    }
+
     .specialization-name {
-        font-size: 24px;
+        font-size: 20px;
+        line-height: 30px;
     }
 
     .specialization-description {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 24px;
     }
 
     .skills .subtext {
@@ -1453,12 +1509,14 @@ $ab-background-color_1: #fef2ff;
     }
 
     .skills .skill-name {
-        font-size: 16px;
+      font-size: 14px;
+      line-height: 24px;
         white-space: nowrap;
     }
 
     .skills .skill-level {
-        font-size: 16px;
+      font-size: 14px;
+      line-height: 24px;
     }
 
     .work .subtext {
@@ -1467,6 +1525,10 @@ $ab-background-color_1: #fef2ff;
 
     .education .subtext {
         margin-bottom: 30px;
+    }
+
+    .skills .card {
+      padding: 25px 25px;
     }
 
     .timeline-item {
@@ -1496,13 +1558,51 @@ $ab-background-color_1: #fef2ff;
         margin-top: 20px;
         padding: 25px;
     }
+
+    .pricing .plan h4 {
+      width: 100%;
+    }
+
+    .pricing .plan .top {
+      flex-direction: column;
+      p {
+        margin-bottom: 0;
+        font-size: 14px !important;
+        line-height: 20px !important;
+      }
+    }
+
+    .pricing .plan .price {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .pricing .plan .btn-plan {
+        font-size: 14px !important;
+        line-height: 24px !important;
+        height: 40px !important;
+        padding: 7px 20px !important;
+    }
+    .pricing .plan ul li {
+      list-style: none;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 500;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .testi .testimonial p, .testi .testimonial h3 {
+      font-size: 18px;
+      line-height: 30px;
+    }
 }
 
 .social-icons {
 	a {
 		font-weight: 600;
-		font-size: 20px;
-		line-height: 140%;
+		font-size: 16px;
+		line-height: 120%;
 		color: $ab-color_1;
 		margin: 0 20px 0 0;
 		&:hover {
@@ -1512,3 +1612,64 @@ $ab-background-color_1: #fef2ff;
 }
 
 
+.logo p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 50px;
+  }
+}
+
+
+
+.swiper-container {
+  width: 100%;
+  height: 400px; /* Set your desired height */
+  position: relative;
+}
+
+.swiper-button-next,
+    .swiper-button-prev {
+      position: absolute;
+      bottom: 10px;
+      width: 40px;
+      min-width: 40px;
+      height: 40px;
+      background-color: #fff;
+      color: #000;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: absolute !important;
+      bottom: 0 !important;
+      top: 100% !important;
+      left: 1% !important;
+      right: 0% !important;
+      &::after {
+        font-size: 14px !important;
+        color: #000;
+      }
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      background-color: #000 !important; /* Change the color on hover */
+      
+      &::after {
+        color: #fff !important;
+      }
+    }
+    .swiper-button-next {
+      left: calc(1% + 50px) !important;
+    }
+
+    main {
+      overflow: hidden;
+    }

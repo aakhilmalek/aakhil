@@ -423,6 +423,8 @@ p {
   }
   h2 {
     font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 30px;
   }
   h3 {
     font-size: 1em;
@@ -431,6 +433,10 @@ p {
     font-size: 14px;
     line-height: 130%;
     margin-bottom: 12px;
+  }
+  body section .subtext {
+    font-size: 16px !important;
+    line-height: 160% !important;
   }
 }
 /* footer */
@@ -460,6 +466,18 @@ header .navbar .navbar-nav .nav-item .nav-link {
   color: #333;
   font-weight: 600;
   font-size: 16px;
+  position: relative;
+}
+header .navbar .navbar-nav .nav-item a:hover::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: #000; /* Change the color as per your preference */
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  transition: width 0.3s ease;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -563,8 +581,8 @@ footer .footer-logo a {
 }
 
 .btn-primary {
-  background-color: #333333;
-  border: 1px solid #333333;
+  background-color: #000;
+  border: 1px solid #000;
   color: #fff;
   font-weight: 500;
   font-size: 18px;
@@ -616,7 +634,7 @@ footer .footer-logo a {
   bottom: 0;
   z-index: 1;
   background: linear-gradient(45deg, #fff, #fff);
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .banner-section::after {
   content: "";
@@ -627,21 +645,21 @@ footer .footer-logo a {
   bottom: 0;
   z-index: 1;
   background: linear-gradient(135deg, #fff, #fff);
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .banner-section h1 {
   font-weight: 600;
   font-size: 56px;
   line-height: 90%;
   letter-spacing: -0.04em;
-  color: #333333;
+  color: #000;
   margin-bottom: 20px;
 }
 .banner-section .subtext {
   font-weight: 500;
   font-size: 18px !important;
   line-height: 130% !important;
-  color: #333333 !important;
+  color: #000 !important;
   margin-bottom: 30px;
 }
 .banner-section .tags {
@@ -654,7 +672,7 @@ footer .footer-logo a {
 }
 .banner-section .tags span {
   background-color: rgba(0, 0, 0, 0.05);
-  color: #333333;
+  color: #000;
   padding: 5px 15px;
   margin: 0 5px 10px 5px;
   border-radius: 100px;
@@ -674,8 +692,25 @@ footer .footer-logo a {
     min-height: 80vh;
   }
   .banner-section h1 {
-    font-size: 8.6vw;
-    line-height: 6.5vw;
+    font-size: 10.6vw;
+    line-height: 10.5vw;
+  }
+  .banner-section p.subtext {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+  .banner-section .tags span {
+    padding: 4px 8px;
+    font-size: 10px;
+    line-height: 10px;
+    margin-bottom: 6px;
+    margin: 0 3px 6px 3px;
+  }
+  .btn {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    height: 40px !important;
+    padding: 7px 20px !important;
   }
 }
 .contact h2 {
@@ -1223,7 +1258,7 @@ footer .footer-logo a {
   .about-me img {
     text-align: center;
     max-width: 60%;
-    margin: 50px auto !important;
+    margin: 30px auto 20px auto !important;
   }
   .about-me .flex-row-reverse {
     flex-direction: column-reverse !important;
@@ -1233,30 +1268,49 @@ footer .footer-logo a {
     margin-bottom: 20px;
   }
   .timeline h3 {
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 24px;
     margin-bottom: 10px;
   }
+  .timeline .timeline-date {
+    font-size: 12px;
+    line-height: 10px;
+  }
+  .timeline p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .skills .skill-item {
+    margin-bottom: 8px;
+  }
   .specialization-name {
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 30px;
   }
   .specialization-description {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 24px;
   }
   .skills .subtext {
     margin-bottom: 30px;
   }
   .skills .skill-name {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 24px;
     white-space: nowrap;
   }
   .skills .skill-level {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 24px;
   }
   .work .subtext {
     margin-bottom: 30px;
   }
   .education .subtext {
     margin-bottom: 30px;
+  }
+  .skills .card {
+    padding: 25px 25px;
   }
   .timeline-item {
     margin: 0 10px 20px 10px;
@@ -1283,14 +1337,108 @@ footer .footer-logo a {
     margin-top: 20px;
     padding: 25px;
   }
+  .pricing .plan h4 {
+    width: 100%;
+  }
+  .pricing .plan .top {
+    flex-direction: column;
+  }
+  .pricing .plan .top p {
+    margin-bottom: 0;
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+  .pricing .plan .price {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .pricing .plan .btn-plan {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    height: 40px !important;
+    padding: 7px 20px !important;
+  }
+  .pricing .plan ul li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 12px;
+  }
+  .testi .testimonial p, .testi .testimonial h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 .social-icons a {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 140%;
+  font-size: 16px;
+  line-height: 120%;
   color: #333;
   margin: 0 20px 0 0;
 }
 .social-icons a:hover {
   color: #8330c2;
+}
+
+.logo p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 50px;
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 400px; /* Set your desired height */
+  position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  bottom: 10px;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute !important;
+  bottom: 0 !important;
+  top: 100% !important;
+  left: 1% !important;
+  right: 0% !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px !important;
+  color: #000;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #000 !important; /* Change the color on hover */
+}
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  color: #fff !important;
+}
+
+.swiper-button-next {
+  left: calc(1% + 50px) !important;
+}
+
+main {
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
