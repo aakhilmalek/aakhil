@@ -809,7 +809,7 @@ $background-color_2: rgba(0, 0, 0, 0.05);
 
 @media (max-width: 767px) {
     .banner-section  {
-      min-height: 80vh;
+      min-height: 60vh;
 
       h1 {
             font-size: 10.6vw;
@@ -823,11 +823,11 @@ $background-color_2: rgba(0, 0, 0, 0.05);
     }
 
     .banner-section .tags span {
-      padding: 4px 8px;
-      font-size: 10px;
-      line-height: 10px;
+      padding: 6px 8px;
+      font-size: 12px;
+      line-height: 14px;
       margin-bottom: 6px;
-      margin: 0 3px 6px 3px;
+      margin: 0 2px 6px 2px;
     }
 
     .btn {
@@ -852,7 +852,7 @@ $cbackground-color_1: #f5f5f7;
 		color: $ccolor_1;
 		mark {
 			position: relative;
-			z-index: -1;
+			z-index: 1;
 			background: 0 0;
 			margin-left: 20px;
 			color: $ccolor_1;
@@ -932,7 +932,7 @@ $p-background-color_1: #8330c2;
 		color: $p-color_1;
 		mark {
 			position: relative;
-			z-index: -1;
+			z-index: 1;
 			background: 0 0;
 			margin-left: 10px;
 			color: $p-color_1;
@@ -1033,7 +1033,7 @@ $t-background-color_2: #f5f5f7;
 		color: $t-color_1;
 		mark {
 			position: relative;
-			z-index: -1;
+			z-index: 1;
 			background: 0 0;
 			margin-left: 10px;
 			color: $t-color_1;
@@ -1119,7 +1119,7 @@ $w-background-color_1: #fef2ff;
 		color: $w-color_1;
 		mark {
 			position: relative;
-			z-index: -1;
+			z-index: 1;
 			background: 0 0;
 			margin-left: 10px;
 			color: $w-color_1;
@@ -1217,7 +1217,7 @@ $s-background-color_2: #fff;
 		color: $s-color_1;
 		mark {
 			position: relative;
-			z-index: -1;
+			z-index: 1;
 			background: 0 0;
 			margin-left: 10px;
 			color: $s-color_1;
@@ -1314,7 +1314,7 @@ $time-border-color_1: rgb(255, 255, 255);
 
 		mark {
 			position: relative;
-			z-index: -1;
+			z-index: 1;
 			background: 0 0;
 			margin-left: 20px;
 			color: $time-color_2;
@@ -1425,7 +1425,7 @@ $ab-background-color_1: #fef2ff;
 
 		mark {
 			position: relative;
-			z-index: -1;
+			z-index: 1;
 			background: 0 0;
 			margin-left: 20px;
 			color: $ab-color_1;
@@ -1496,7 +1496,7 @@ $ab-background-color_1: #fef2ff;
 
     .specialization-name {
         font-size: 20px;
-        line-height: 30px;
+        line-height: 20px;
     }
 
     .specialization-description {
@@ -1510,13 +1510,13 @@ $ab-background-color_1: #fef2ff;
 
     .skills .skill-name {
       font-size: 14px;
-      line-height: 24px;
+      line-height: 16px;
         white-space: nowrap;
     }
 
     .skills .skill-level {
       font-size: 14px;
-      line-height: 24px;
+      line-height: 16px;
     }
 
     .work .subtext {
@@ -1561,14 +1561,16 @@ $ab-background-color_1: #fef2ff;
 
     .pricing .plan h4 {
       width: 100%;
+      font-size: 18px;
+      line-height: 20px;
     }
 
     .pricing .plan .top {
       flex-direction: column;
       p {
         margin-bottom: 0;
-        font-size: 14px !important;
-        line-height: 20px !important;
+        font-size: 12px !important;
+        line-height: 14px !important;
       }
     }
 
@@ -1596,6 +1598,22 @@ $ab-background-color_1: #fef2ff;
       font-size: 18px;
       line-height: 30px;
     }
+
+    .contact .partner-content h3 {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
+    .social-icons a {
+      margin-right: 10px !important;
+    }
+
+    .testi {
+      height: auto !important;
+      min-height: unset !important;
+    }
+
 }
 
 .social-icons {
@@ -1620,6 +1638,14 @@ $ab-background-color_1: #fef2ff;
 }
 
 @media (max-width: 767px) {
+  section h2 {
+    margin-bottom: 30px !important;
+  }
+  
+  section h2 mark {
+    margin-left: 10px !important;
+  }
+
   .header {
     height: 50px;
   }
@@ -1640,6 +1666,7 @@ $ab-background-color_1: #fef2ff;
       width: 40px;
       min-width: 40px;
       height: 40px;
+      max-height: 40px;
       background-color: #fff;
       color: #000;
       border-radius: 50%;
@@ -1655,6 +1682,7 @@ $ab-background-color_1: #fef2ff;
       &::after {
         font-size: 14px !important;
         color: #000;
+        font-weight: 600;
       }
     }
 

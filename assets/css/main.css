@@ -689,7 +689,7 @@ footer .footer-logo a {
 }
 @media (max-width: 767px) {
   .banner-section {
-    min-height: 80vh;
+    min-height: 60vh;
   }
   .banner-section h1 {
     font-size: 10.6vw;
@@ -700,11 +700,11 @@ footer .footer-logo a {
     line-height: 26px !important;
   }
   .banner-section .tags span {
-    padding: 4px 8px;
-    font-size: 10px;
-    line-height: 10px;
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 14px;
     margin-bottom: 6px;
-    margin: 0 3px 6px 3px;
+    margin: 0 2px 6px 2px;
   }
   .btn {
     font-size: 14px !important;
@@ -720,7 +720,7 @@ footer .footer-logo a {
 }
 .contact h2 mark {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background: 0 0;
   margin-left: 20px;
   color: #333;
@@ -786,7 +786,7 @@ footer .footer-logo a {
 }
 .pricing h2 mark {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background: 0 0;
   margin-left: 10px;
   color: #333;
@@ -879,7 +879,7 @@ footer .footer-logo a {
 }
 .testi h2 mark {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background: 0 0;
   margin-left: 10px;
   color: #333333;
@@ -958,7 +958,7 @@ footer .footer-logo a {
 }
 .work h2 mark {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background: 0 0;
   margin-left: 10px;
   color: #333333;
@@ -1038,7 +1038,7 @@ footer .footer-logo a {
 }
 .skills h2 mark {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background: 0 0;
   margin-left: 10px;
   color: #333333;
@@ -1128,7 +1128,7 @@ footer .footer-logo a {
 }
 .education h2 mark {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background: 0 0;
   margin-left: 20px;
   color: #333;
@@ -1224,7 +1224,7 @@ footer .footer-logo a {
 }
 .about-me h2 mark {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background: 0 0;
   margin-left: 20px;
   color: #333;
@@ -1285,7 +1285,7 @@ footer .footer-logo a {
   }
   .specialization-name {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
   }
   .specialization-description {
     font-size: 14px;
@@ -1296,12 +1296,12 @@ footer .footer-logo a {
   }
   .skills .skill-name {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 16px;
     white-space: nowrap;
   }
   .skills .skill-level {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 16px;
   }
   .work .subtext {
     margin-bottom: 30px;
@@ -1339,14 +1339,16 @@ footer .footer-logo a {
   }
   .pricing .plan h4 {
     width: 100%;
+    font-size: 18px;
+    line-height: 20px;
   }
   .pricing .plan .top {
     flex-direction: column;
   }
   .pricing .plan .top p {
     margin-bottom: 0;
-    font-size: 14px !important;
-    line-height: 20px !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
   }
   .pricing .plan .price {
     font-size: 30px;
@@ -1370,6 +1372,18 @@ footer .footer-logo a {
     font-size: 18px;
     line-height: 30px;
   }
+  .contact .partner-content h3 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .social-icons a {
+    margin-right: 10px !important;
+  }
+  .testi {
+    height: auto !important;
+    min-height: unset !important;
+  }
 }
 .social-icons a {
   font-weight: 600;
@@ -1390,6 +1404,12 @@ footer .footer-logo a {
 }
 
 @media (max-width: 767px) {
+  section h2 {
+    margin-bottom: 30px !important;
+  }
+  section h2 mark {
+    margin-left: 10px !important;
+  }
   .header {
     height: 50px;
   }
@@ -1407,6 +1427,7 @@ footer .footer-logo a {
   width: 40px;
   min-width: 40px;
   height: 40px;
+  max-height: 40px;
   background-color: #fff;
   color: #000;
   border-radius: 50%;
@@ -1424,6 +1445,7 @@ footer .footer-logo a {
 .swiper-button-prev::after {
   font-size: 14px !important;
   color: #000;
+  font-weight: 600;
 }
 
 .swiper-button-next:hover,
