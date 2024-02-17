@@ -1083,6 +1083,7 @@ $t-background-color_2: #fff;
         align-items: flex-start;
         max-width: 100%;
         margin-right: 0px;
+       
         img {
             width: 100px;
             height: 100px;
@@ -1092,13 +1093,14 @@ $t-background-color_2: #fff;
             margin-left: 40px;
         }
         p {
-            font-size: 20px;
+            font-size: 24px;
             color: $t-color_2;
             margin-bottom: 20px;
             font-weight: 500;
+            min-height: 250px;
         }
         h3 {
-            font-size: 24px;
+            font-size: 26px;
             color: $t-color_2;
             margin-bottom: 0;
         }
@@ -1111,7 +1113,7 @@ $t-color_2: #333333;
 $t-background-color_1: #fff;
 $t-background-color_2: #f5f5f7;
 
-.mywork {
+.mywork-section {
 	
 	background-color: $t-background-color_1;
 	h2 {
@@ -1171,10 +1173,16 @@ $t-background-color_2: #f5f5f7;
         max-width: 100%;
         margin-right: 0px;
         min-height: 500px;
+
+        > div {
+          margin-right: 40px;
+        }
         
         img {
-           margin-right: 40px;
-           border-radius: 40px;
+           border-radius: 30px;
+           width: 100%;
+           min-width: 600px;
+           display: block;
         }
         p {
             font-size: 20px;
@@ -1441,7 +1449,7 @@ $time-border-color_1: rgb(255, 255, 255);
 	border-color: $time-border-color_1;
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
-	z-index: 99;
+	z-index: 9;
 }
 
 .timeline-content {
@@ -1629,6 +1637,7 @@ $ab-background-color_1: #fef2ff;
         padding: 25px;
         flex-direction: column-reverse;
         align-items: flex-end;
+        
     }
     .testi .testimonial img {
         height: 70px;
@@ -1698,6 +1707,7 @@ $ab-background-color_1: #fef2ff;
     .testi {
       height: auto !important;
       min-height: unset !important;
+      padding-bottom: 80px;
     }
 
 }
@@ -1735,13 +1745,37 @@ $ab-background-color_1: #fef2ff;
   .header {
     height: 50px;
   }
+
+  .mywork-section {
+    min-height: unset !important;
+
+    .swiper-mywork {
+      height: auto !important;
+    }
+  }
+  .mywork-section .mywork {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    height: auto;
+    min-height: unset;
+    
+    > div {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    img {
+      min-width: 100%;
+    }
+  }
 }
 
 
 
 .swiper-container, .swiper-mywork {
   width: 100%;
-  height: 400px; /* Set your desired height */
+  height: unset; /* Set your desired height */
   position: relative;
 }
 
@@ -1761,8 +1795,8 @@ $ab-background-color_1: #fef2ff;
       align-items: center;
       cursor: pointer;
       position: absolute !important;
-      bottom: 0 !important;
-      top: 100% !important;
+      bottom: -60px !important;
+      top: auto !important;
       left: 1% !important;
       right: 0% !important;
       &::after {
@@ -1833,4 +1867,50 @@ $ab-background-color_1: #fef2ff;
   .modal .modal-dialog .modal-content{
     border-radius: 40px !important;
     padding: 30px;
+  }
+
+  @media (max-width: 767px) {
+    .swiper-mywork {
+      padding-bottom: 30px;
+      position: relative;
+      .swiper-button-next,
+      .swiper-button-prev {
+        position: absolute;
+        bottom: 10px;
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        max-height: 40px;
+        background-color: #fff;
+        color: #000;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute !important;
+        bottom: -20px !important;
+        top: auto !important;
+        right: 15% !important;
+        left:auto !important;
+        &::after {
+          font-size: 14px !important;
+          color: #000;
+          font-weight: 600;
+        }
+      }
+  
+      .swiper-button-next:hover,
+      .swiper-button-prev:hover {
+        background-color: #000 !important; /* Change the color on hover */
+        
+        &::after {
+          color: #fff !important;
+        }
+      }
+      .swiper-button-next {
+        right: calc(15% - 50px) !important;
+      }
+  
+    }
   }
