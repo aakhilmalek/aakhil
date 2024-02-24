@@ -1550,6 +1550,11 @@ $ab-background-color_1: #fef2ff;
 
 
 @media (max-width: 767px) {
+  footer .footer-logo a {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+  }
     .about-me {
         border-radius: 0;
 
