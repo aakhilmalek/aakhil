@@ -468,7 +468,7 @@ header .navbar .navbar-nav .nav-item .nav-link {
   font-size: 16px;
   position: relative;
 }
-header .navbar .navbar-nav .nav-item a:hover::after {
+header .navbar .navbar-nav .nav-item a:hover::after, header .navbar .navbar-nav .nav-item a.active::after {
   content: "";
   display: block;
   width: 60%;
@@ -580,7 +580,7 @@ footer .footer-logo a {
   text-decoration: none;
 }
 
-.btn-primary {
+.btn.btn-primary {
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
@@ -592,17 +592,17 @@ footer .footer-logo a {
   border-radius: 100px;
   outline: none;
 }
-.btn-primary:hover {
+.btn.btn-primary:hover {
   background-color: #8330c2;
   border: 1px solid #8330c2;
   color: #fff;
 }
-.btn-primary:focus {
+.btn.btn-primary:focus {
   background-color: #8330c2;
   border: 1px solid #8330c2;
   color: #fff;
 }
-.btn-primary:active {
+.btn.btn-primary:active {
   background-color: #8330c2;
   border: 1px solid #8330c2;
   color: #fff;
@@ -1065,6 +1065,7 @@ footer .footer-logo a {
   line-height: 140%;
   color: #333333;
   max-width: 700px;
+  margin-bottom: 30px;
 }
 .work .ct-box {
   display: flex;
@@ -1079,6 +1080,7 @@ footer .footer-logo a {
   -o-object-fit: cover;
      object-fit: cover;
   width: 400px;
+  border-radius: 20px;
 }
 .work .ct-box .ct-latest-description {
   padding: 0 20px;
@@ -1659,7 +1661,9 @@ footer .footer-logo a {
     right: calc(15% - 50px) !important;
   }
 }
-.content-sticky {
-  position: sticky;
-  top: 110px;
+@media (min-width: 992px) {
+  .content-sticky {
+    position: sticky;
+    top: 110px;
+  }
 }/*# sourceMappingURL=main.css.map */

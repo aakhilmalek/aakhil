@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 
 /* ! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
 
@@ -401,17 +403,23 @@ footer {
 h1 {
   font-size: 56px;
   margin-bottom: 15px;
+  // font-family: "IBM Plex Sans", sans-serif !important;
+
 }
 
 h2 {
     font-size: 50px;
     line-height: 140%;
   margin-bottom: 8px;
+  // font-family: "IBM Plex Sans", sans-serif !important;
+
 }
 
 h3 {
   font-size: 36px;
   margin-bottom: 6px;
+  // font-family: "IBM Plex Sans", sans-serif !important;
+
 }
 
 p {
@@ -548,7 +556,7 @@ header {
           position: relative;
           
 				}
-        a:hover::after {
+        a:hover::after,  a.active::after {
           content: '';
           display: block;
           width: 60%;
@@ -689,7 +697,7 @@ $btn-color_1: #fff;
 $btn-background-color_1: #000;
 $btn-background-color_2: #8330c2;
 
-.btn-primary {
+.btn.btn-primary {
 	background-color: $btn-background-color_1;
 	border: 1px solid $btn-background-color_1;
 	color: $btn-color_1;
@@ -1210,7 +1218,6 @@ $w-background-color_1: #fef2ff;
 	background-color: $w-background-color_1;
 	h2 {
 		font-weight: 700;
-		
 		letter-spacing: -.05em;
 		color: $w-color_1;
 		mark {
@@ -1239,6 +1246,7 @@ $w-background-color_1: #fef2ff;
 		line-height: 140%;
 		color: $w-color_1;
 		max-width: 700px;
+    margin-bottom: 30px;
 	}
 
     
@@ -1255,6 +1263,7 @@ $w-background-color_1: #fef2ff;
     /* height: auto; */
     object-fit: cover;
     width: 400px;
+    border-radius: 20px;
   }
   
   .ct-box .ct-latest-description {
@@ -1922,7 +1931,10 @@ $ab-background-color_1: #fef2ff;
     }
   }
 
+  @media (min-width: 992px) {
   .content-sticky {
     position: sticky;
     top: 110px;
   }
+
+}
