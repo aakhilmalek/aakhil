@@ -870,6 +870,7 @@ footer .footer-logo a {
 }
 
 .testi {
+  overflow: hidden;
   background-color: #f5f5f7;
 }
 .testi h2 {
@@ -951,6 +952,7 @@ footer .footer-logo a {
 
 .mywork-section {
   background-color: #fff;
+  overflow: hidden;
 }
 .mywork-section h2 {
   font-weight: 700;
@@ -1502,7 +1504,7 @@ footer .footer-logo a {
     height: 50px;
   }
   .mywork-section {
-    min-height: unset !important;
+    min-height: 100vh !important;
   }
   .mywork-section .swiper-mywork {
     height: auto !important;
@@ -1567,10 +1569,6 @@ footer .footer-logo a {
 
 .swiper-button-next {
   left: calc(1% + 50px) !important;
-}
-
-main {
-  overflow: hidden;
 }
 
 .swiper-mywork .swiper-button-next,
@@ -1660,4 +1658,8 @@ main {
   .swiper-mywork .swiper-button-next {
     right: calc(15% - 50px) !important;
   }
+}
+.content-sticky {
+  position: sticky;
+  top: 110px;
 }/*# sourceMappingURL=main.css.map */

@@ -27,6 +27,7 @@
     margin: 0;
     /* font-family: 'Gabarito', sans-serif !important; */
     font-family: 'Poppins', sans-serif !important;
+    
   }
   
   /**
@@ -1025,7 +1026,7 @@ $t-background-color_1: #f5f5f7;
 $t-background-color_2: #fff;
 
 .testi {
-	
+	overflow: hidden;
 	background-color: $t-background-color_1;
 	h2 {
 		font-weight: 700;
@@ -1114,8 +1115,9 @@ $t-background-color_1: #fff;
 $t-background-color_2: #f5f5f7;
 
 .mywork-section {
-	
 	background-color: $t-background-color_1;
+  overflow: hidden;
+  
 	h2 {
 		font-weight: 700;
 		letter-spacing: -.05em;
@@ -1752,7 +1754,7 @@ $ab-background-color_1: #fef2ff;
   }
 
   .mywork-section {
-    min-height: unset !important;
+    min-height: 100vh !important;
 
     .swiper-mywork {
       height: auto !important;
@@ -1824,7 +1826,7 @@ $ab-background-color_1: #fef2ff;
     }
   
     main {
-      overflow: hidden;
+      
     }
 
   .swiper-mywork {
@@ -1918,4 +1920,9 @@ $ab-background-color_1: #fef2ff;
       }
   
     }
+  }
+
+  .content-sticky {
+    position: sticky;
+    top: 110px;
   }
