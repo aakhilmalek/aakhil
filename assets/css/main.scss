@@ -283,11 +283,11 @@ p {
 
 @media screen and (max-width: $laptop-screen) {
   section {
-    padding: 60px 0;
+    padding: 80px 0;
   }
 
   footer {
-    padding: 60px 0;
+    padding: 80px 0;
   }
 
   h1 {
@@ -311,11 +311,11 @@ p {
 
 @media screen and (max-width: $medium-screen) {
   section {
-    padding: 40px 0;
+    padding: 70px 0;
   }
 
   footer {
-    padding: 40px 0;
+    padding: 70px 0;
   }
 
   h1 {
@@ -497,7 +497,7 @@ header {
           justify-content: center;
           width: 100%;
           .nav-link {
-            padding: 10px;
+            padding: 8px 10px;
             font-size: 5vw;
             line-height: 7.5vw;
             text-align: center;
@@ -679,9 +679,9 @@ $background-color_2: rgba(0, 0, 0, 0.05);
 
   .subtext {
     font-weight: 500;
-    font-size: 18px !important;
-    line-height: 130% !important;
-    color: $color_1 !important;
+    font-size: 22px;
+    line-height: 150%;
+    color: $color_1;
     margin-bottom: 30px;
   }
 
@@ -717,7 +717,8 @@ $background-color_2: rgba(0, 0, 0, 0.05);
 
 @media (max-width: 767px) {
   .banner-section {
-    min-height: 60vh;
+    min-height: 100vh;
+    padding: 80px 0;
 
     h1 {
       font-size: 10.6vw;
@@ -784,8 +785,8 @@ $cbackground-color_1: #f5f5f7;
 
   .subtext {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 140%;
+    font-size: 22px;
+    line-height: 150%;
     color: $ccolor_1;
     max-width: 700px;
   }
@@ -869,8 +870,8 @@ $p-background-color_1: #8330c2;
 
   .subtext {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 140%;
+    font-size: 22px;
+    line-height: 150%;
     color: $p-color_1;
     max-width: 700px;
   }
@@ -979,8 +980,8 @@ $t-background-color_2: #fff;
 
   .subtext {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 140%;
+    font-size: 22px;
+    line-height: 150%;
     color: $t-color_1;
     max-width: 700px;
   }
@@ -1074,8 +1075,8 @@ $t-background-color_2: #f5f5f7;
 
   .subtext {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 140%;
+    font-size: 22px;
+    line-height: 150%;
     color: $t-color_1;
     max-width: 700px;
   }
@@ -1169,8 +1170,8 @@ $w-background-color_1: #fef2ff;
 
   .subtext {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 140%;
+    font-size: 22px;
+    line-height: 150%;
     color: $w-color_1;
     max-width: 700px;
     margin-bottom: 30px;
@@ -1264,8 +1265,8 @@ $s-background-color_2: #fff;
 
   .subtext {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 140%;
+    font-size: 22px;
+    line-height: 150%;
     color: $s-color_1;
     max-width: 700px;
   }
@@ -1376,8 +1377,8 @@ $time-border-color_1: rgb(255, 255, 255);
 
   .subtext {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 140%;
+    font-size: 22px;
+    line-height: 150%;
     color: $time-color_1;
     max-width: 700px;
   }
@@ -1495,11 +1496,16 @@ $ab-background-color_1: #fef2ff;
 
   .subtext {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 140%;
+    font-size: 22px;
+    line-height: 150%;
     color: $ab-color_1;
-    max-width: 700px;
+    max-width: 650px;
     margin-bottom: 30px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 

@@ -260,10 +260,10 @@ p {
 }
 @media screen and (max-width: 992px) {
   section {
-    padding: 60px 0;
+    padding: 80px 0;
   }
   footer {
-    padding: 60px 0;
+    padding: 80px 0;
   }
   h1 {
     font-size: 1.8em;
@@ -282,10 +282,10 @@ p {
 }
 @media screen and (max-width: 768px) {
   section {
-    padding: 40px 0;
+    padding: 70px 0;
   }
   footer {
-    padding: 40px 0;
+    padding: 70px 0;
   }
   h1 {
     font-size: 1.5em;
@@ -434,7 +434,7 @@ header .navbar .navbar-nav .nav-item .btn:hover, header .navbar .navbar-nav .nav
     width: 100%;
   }
   header .navbar .navbar-nav .nav-item .nav-link {
-    padding: 10px;
+    padding: 8px 10px;
     font-size: 5vw;
     line-height: 7.5vw;
     text-align: center;
@@ -567,9 +567,9 @@ footer .footer-logo a {
 }
 .banner-section .subtext {
   font-weight: 500;
-  font-size: 18px !important;
-  line-height: 130% !important;
-  color: #000 !important;
+  font-size: 22px;
+  line-height: 150%;
+  color: #000;
   margin-bottom: 30px;
 }
 .banner-section .tags {
@@ -599,7 +599,8 @@ footer .footer-logo a {
 }
 @media (max-width: 767px) {
   .banner-section {
-    min-height: 60vh;
+    min-height: 100vh;
+    padding: 80px 0;
   }
   .banner-section h1 {
     font-size: 10.6vw;
@@ -650,8 +651,8 @@ footer .footer-logo a {
 }
 .contact .subtext {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 140%;
+  font-size: 22px;
+  line-height: 150%;
   color: #333;
   max-width: 700px;
 }
@@ -715,8 +716,8 @@ footer .footer-logo a {
 }
 .pricing .subtext {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 140%;
+  font-size: 22px;
+  line-height: 150%;
   color: #333;
   max-width: 700px;
 }
@@ -809,8 +810,8 @@ footer .footer-logo a {
 }
 .testi .subtext {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 140%;
+  font-size: 22px;
+  line-height: 150%;
   color: #333333;
   max-width: 700px;
 }
@@ -890,8 +891,8 @@ footer .footer-logo a {
 }
 .mywork-section .subtext {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 140%;
+  font-size: 22px;
+  line-height: 150%;
   color: #000;
   max-width: 700px;
 }
@@ -971,8 +972,8 @@ footer .footer-logo a {
 }
 .work .subtext {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 140%;
+  font-size: 22px;
+  line-height: 150%;
   color: #333333;
   max-width: 700px;
   margin-bottom: 30px;
@@ -1050,8 +1051,8 @@ footer .footer-logo a {
 }
 .skills .subtext {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 140%;
+  font-size: 22px;
+  line-height: 150%;
   color: #333333;
   max-width: 700px;
 }
@@ -1144,8 +1145,8 @@ footer .footer-logo a {
 }
 .education .subtext {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 140%;
+  font-size: 22px;
+  line-height: 150%;
   color: #fff;
   max-width: 700px;
 }
@@ -1246,11 +1247,15 @@ footer .footer-logo a {
 }
 .about-me .subtext {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 140%;
+  font-size: 22px;
+  line-height: 150%;
   color: #333;
-  max-width: 700px;
+  max-width: 650px;
   margin-bottom: 30px;
+}
+.about-me .social-icons a {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 @media (max-width: 767px) {
