@@ -55,10 +55,16 @@ document.addEventListener("DOMContentLoaded", function() {
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,
       spaceBetween: 30,
+    
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      autoplay: {
+        delay: 2000,
+        pauseOnMouseEnter: true,
+        
+      },    
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -81,6 +87,10 @@ document.addEventListener("DOMContentLoaded", function() {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      autoplay: {
+        delay: 2000,
+        pauseOnMouseEnter: true,
+      },    
       pagination: {
         el: '.swiper-pagination',
         clickable: true,

@@ -1019,6 +1019,7 @@ $t-background-color_2: #fff;
       object-fit: cover;
       margin-bottom: 10px;
       margin-left: 40px;
+      object-position: top;
     }
 
     p {
@@ -1108,8 +1109,11 @@ $t-background-color_2: #f5f5f7;
     margin-right: 0px;
     min-height: 500px;
 
+    flex-direction: column;
+
     > div {
-      margin-right: 40px;
+      margin-right: 0px;
+      margin-bottom: 20px;
     }
 
     img {
@@ -1122,7 +1126,7 @@ $t-background-color_2: #f5f5f7;
     p {
       font-size: 20px;
       color: $t-color_2;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       font-weight: 500;
     }
 
@@ -1130,7 +1134,7 @@ $t-background-color_2: #f5f5f7;
       font-size: 24px;
       font-weight: 600;
       color: $t-color_2;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   }
 }
@@ -1454,7 +1458,7 @@ $ab-color_2: #8330c2;
 $ab-background-color_1: #fef2ff;
 
 .about-me {
-  border-radius: 50px;
+  border-radius: 50px 50px 0 0;
   background-color: $ab-background-color_1 !important;
   border: 0 !important;
   min-height: 100vh;
@@ -1899,7 +1903,7 @@ main {
 
 
 // Variables
-$service-bg-color: #f9f9f9;
+$service-bg-color: #fef2ff;
 $service-title-color: #333;
 $service-text-color: #333;
 $service-icon-color: #007bff;
